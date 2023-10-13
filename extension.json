@@ -1,0 +1,26 @@
+{
+"name": "stoplooking",
+"version": "0.0.0",
+"command_name": "stoplooking",
+"extension_author": "zimnyaa",
+"original_author": "zimnyaa",
+"repo_url": "https://github.com/zimnyaa/stoplooking",
+"help": "disable etw ReadVm/WriteVm logging",
+"depends_on": "coff-loader",
+"entrypoint": "go",
+"files": [
+{
+"os": "windows",
+"arch": "amd64",
+"path": "stoplooking.x64.o"
+}
+],
+"arguments": [
+    {
+    "name": "pid",
+    "desc": "pid to alter",
+    "type": "int",
+    "optional": false
+    }
+]
+}
